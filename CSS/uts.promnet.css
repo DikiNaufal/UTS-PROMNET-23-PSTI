@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px;
+  padding-block: 1rem;
+  background-color: white;
+}
+header.navbar-container .logo img {
+  width: 250px;
+}
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+  position: relative;
+  bottom: 10px;
+  margin-right: 20px;
+}
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 820px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+  header.navbar-container .logo img {
+    margin-top: 20px;
+  }
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    padding: 20px;
+    margin: auto;
+    line-height: 30px;
+  }
+  nav ul {
+    align-self: stretch;
+  }
+}
+/*--Akhir Header--*/
+
+/*--Main--*/
+/*--Background Gambar--*/
+.Background-fixed {
+  background-attachment: fixed;
+  background-position: center;
+}
+.ImageBackgroundWrap {
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ImageInnerWrap {
+  position: relative;
+  z-index: 223;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.TextBackground {
+  padding: 13%;
+  color: white;
+  text-align: center;
+}
+/*--Content--*/
+main .content1 {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content2 {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content3 {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+/* Content About*/
+main .content-about .editor-jurnal .integrated {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+
+main .content-about .editor-jurnal .integrated button {
+  padding: 0.4em 2.1rem;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: black;  
+}
+
+main .content-about .educational-agent .ruangguru {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+main .content-about .educational-agent .ruangguru button {
+  padding: 0.4em 2.1rem;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: black;
+}
+main .content-about .teacher .elementary-school {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+main .content-about .teacher .elementary-school button {
+  padding: 0.4em 2.1rem;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: black;
+}
+main .content-work {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-block-end: 100px;
+}
+main .content-work .content-deskripsi {
+  flex: 1 1;
+}
+main .content-work .content-image {
+  flex: 1;
+  display: flex;  
+}
+main .content-work .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 450px;
+}
+main .content-contact .deskripsi .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center ;
+  gap: 1.5rem;
+}
+main .content-contact .deskripsi .social-media li {
+  list-style-type: none ;
+}
+main .content-contact .deskripsi .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+.paragraf {
+  position: relative;
+  bottom: 35px;
+}
